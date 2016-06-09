@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package xkcd;
+
+message Empty {
+
+}
+
+message Offset {
+  sint32 offset = 1;
+}
+
+message Url {
+  string url = 1;
+}
+
+service XkcdGrabber {
+  rpc getLatestUrl(Empty) returns (Url) {}
+
+  rpc getRandomUrl(Empty) returns (Url) {}
+
+  rpc getNextUrl(Offset) returns (Url) {}
+
+  rpc getPreviousUrl(Offset) returns (Url) {}
+}

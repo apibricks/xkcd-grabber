@@ -1,0 +1,19 @@
+{
+  "name": "xkcdImageGrabber",
+  "author": "hubot-grpc group",
+  "version": "0.1.0",
+  "description": "A grpc service used to retrieve xkcd posts",
+  "keywords": [
+    "grpc",
+    "xkcd"
+  ],
+  "url": "https://github.com/hubot-grpc/xkcd-grabber",
+  "bugs": "https://github.com/hubot-grpc/xkcd-grabber/issues",
+  "repository": "git://github.com/hubot-grpc/xkcd-grabber",
+  "license": "MIT",
+  "dependencies": [
+    "grpc",
+    "promise",
+    "request"
+  ]
+}
