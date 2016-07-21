@@ -1,5 +1,9 @@
 FROM mhart/alpine-node:6.2
 
+VOLUME /api
+
+EXPOSE 50051
+
 RUN apk add --no-cache libc6-compat && rm -rf /var/cache/apk/* /root/.cache
 
 RUN adduser -D runner
